@@ -1,0 +1,57 @@
+#include<iostream>
+#include<conio.h>
+#define n 3
+using namespace std;
+
+int i[n], z,atas;
+void push(int a)
+{
+	atas=atas+1;
+	i[atas]=a;
+	
+}
+int pop()
+{
+	int a;
+	a=i[atas];
+	atas=atas-1;
+	return a;
+}
+
+int main()
+{
+	cout<<"Masukkan Nilai\n\n";
+	atas=-1;
+	
+	{
+		cout<<"Nilai Pertama : ";
+		cin>>z;
+		push(z);
+		
+	{
+		cout<<"Nilai Kedua : ";
+		cin>>z;
+		push(z);
+		
+	{
+		cout<<"Nilai Ketiga : ";
+		cin>>z;
+		push(z);
+		
+	{
+		cout<<"Nilai Keempat : ";
+		cin>>z;
+		push(z);
+	}
+		cout<<endl;
+		cout<<"Hasil Nilai: "<<endl;
+		while (atas>=0)
+		{
+			z=pop();
+			cout<<z<<" ";
+		}
+	getch();
+}
+}
+}
+}
